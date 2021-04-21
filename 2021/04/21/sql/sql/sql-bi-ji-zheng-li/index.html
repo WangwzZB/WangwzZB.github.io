@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Newwork Technology Daily Ideas">
+    <meta name="keywords" content="SQL理论概念整理, Newwork Technology Daily Ideas">
     <meta name="description" content="这是WangwzZB的博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | WangwzZB&#39;s Blog</title>
+    <title>SQL理论概念整理 | WangwzZB&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -312,12 +312,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">SQL理论概念整理</h1>
                 </div>
             </div>
         </div>
@@ -431,12 +431,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/SQL/">
+                                <span class="chip bg-color">SQL</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/SQL/" class="post-category">
+                                SQL
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -445,7 +458,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-04-18
+                    2021-04-21
                 </div>
                 
 
@@ -469,19 +482,246 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <div align="center"><font size="70">SQL理论概念整理</font></div>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h1 id="1-为什么需要数据库"><a href="#1-为什么需要数据库" class="headerlink" title="1.为什么需要数据库"></a>1.为什么需要数据库</h1><ul>
+<li>   一个统一的规范的，对数据进行读、写、查找、增删等操作的接口。</li>
+</ul>
+<h1 id="2-什么是关系型数据模型"><a href="#2-什么是关系型数据模型" class="headerlink" title="2.什么是关系型数据模型"></a>2.什么是关系型数据模型</h1><h2 id="2-1-数据模型"><a href="#2-1-数据模型" class="headerlink" title="2.1 数据模型"></a>2.1 数据模型</h2><ul>
+<li>层次模型</li>
+<li></li>
+<li>网状模型</li>
+<li>关系模型（广泛使用）</li>
+</ul>
+<h2 id="2-2-我的理解"><a href="#2-2-我的理解" class="headerlink" title="2.2 我的理解"></a>2.2 我的理解</h2><p>不同的二维表格通过某一行，或者某一列等关联起来（点击某一列的元素下面还有另一个二维表）</p>
+<h2 id="3-关系表中的数据类型"><a href="#3-关系表中的数据类型" class="headerlink" title="3.关系表中的数据类型"></a>3.关系表中的数据类型</h2><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>INT</td>
+<td>整型</td>
+<td>4字节整数类型，范围约+/-21亿</td>
+</tr>
+<tr>
+<td>BIGINT</td>
+<td>长整型</td>
+<td>8字节整数类型，范围约+/-922亿亿</td>
+</tr>
+<tr>
+<td>REAL</td>
+<td>浮点型</td>
+<td>4字节浮点数，范围约+/-1038</td>
+</tr>
+<tr>
+<td>DOUBLE</td>
+<td>浮点型</td>
+<td>8字节浮点数，范围约+/-10308</td>
+</tr>
+<tr>
+<td>DECIMAL(M,N)</td>
+<td>高精度小数</td>
+<td>由用户指定精度的小数，例如，DECIMAL(20,10)表示一共20位，其中小数10位，通常用于财务计算</td>
+</tr>
+<tr>
+<td>CHAR(N)</td>
+<td>定长字符串</td>
+<td>存储指定长度的字符串，例如，CHAR(100)总是存储100个字符的字符串</td>
+</tr>
+<tr>
+<td>VARCHAR(N)</td>
+<td>变长字符串</td>
+<td>存储可变长度的字符串，例如，VARCHAR(100)可以存储0~100个字符的字符串</td>
+</tr>
+<tr>
+<td>BOOLEAN</td>
+<td>布尔类型</td>
+<td>存储True或者False</td>
+</tr>
+<tr>
+<td>DATE</td>
+<td>日期类型</td>
+<td>存储日期，例如，2018-06-22</td>
+</tr>
+<tr>
+<td>TIME</td>
+<td>时间类型</td>
+<td>存储时间，例如，12:20:59</td>
+</tr>
+<tr>
+<td>DATETIME</td>
+<td>日期和时间类型</td>
+<td>存储日期+时间，例如，2018-06-22 12:20:59</td>
+</tr>
+<tr>
+<td>特定数据类型如 JSON</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="4-主流关系数据库"><a href="#4-主流关系数据库" class="headerlink" title="4.主流关系数据库"></a>4.主流关系数据库</h2><ul>
+<li>商用数据库，例如：Oracle，SQL Server，DB2等；</li>
+<li>开源数据库，例如：MySQL，PostgreSQL等；</li>
+<li>桌面数据库，以微软Access为代表，适合桌面应用程序使用；</li>
+<li>嵌入式数据库，以Sqlite为代表，适合手机应用和桌面程序。</li>
+</ul>
+<h2 id="5-结构化查询语言SQL是什么？"><a href="#5-结构化查询语言SQL是什么？" class="headerlink" title="5.结构化查询语言SQL是什么？"></a>5.结构化查询语言SQL是什么？</h2><p>标准SQL的核心功能公用，包括：</p>
+<ul>
+<li><p>DDL：Data Definition Language</p>
+<p>  DDL允许用户定义数据，也就是创建表、删除表、修改表结构这些操作。通常，DDL由数据库管理员执行。</p>
+</li>
+<li><p>DML：Data Manipulation Language</p>
+<p>  DML为用户提供添加、删除、更新数据的能力，这些是应用程序对数据库的日常操作。</p>
+</li>
+<li><p>DQL：Data Query Language</p>
+<p>  DQL允许用户查询数据，这也是通常最频繁的数据库日常操作。</p>
+</li>
+</ul>
+<h2 id="6-SQL语言关键字不区分大小写，不同数据库有出入"><a href="#6-SQL语言关键字不区分大小写，不同数据库有出入" class="headerlink" title="6.SQL语言关键字不区分大小写，不同数据库有出入"></a>6.SQL语言关键字不区分大小写，不同数据库有出入</h2><h2 id="7-关系模型"><a href="#7-关系模型" class="headerlink" title="7.关系模型"></a>7.关系模型</h2><ul>
+<li><p>定义：关系数据库是建立在关系模型上的。关系模型本质上就是若干个存储数据的二维表</p>
+</li>
+<li><p>表的每一行称为记录（Record），记录是一个逻辑意义上的数据。</p>
+</li>
+<li><p>表的每一列称为字段（Column），同一个表的每一行记录都拥有相同的若干字段。</p>
+</li>
+<li><p>避免数据类型为NULL</p>
+</li>
+<li><p>为了按照应用程序的逻辑来组织和存储数据，关系数据库的表和表之间需要建立以下关系：</p>
+<ul>
+<li>一对多：一个班级对应多个学生</li>
+<li>多对一：学生表中的多条学生记录对应一个班级</li>
+<li>一对一：一个学生对应一个电话号码记录，一对一的关系表可以合并，但拆分是为了1.将常用的数据提取出来 2.避免记录中有<code>NULL</code>类型</li>
+<li>多对多：一个老师对应多个班级，一个班级对应多个老师，将班级和老师字段列在一个表里。<br>判断关系标准：能不能有多个不相同的行对应同一列字段所代表的令一个二维表？</li>
+</ul>
+</li>
+</ul>
+<h2 id="7-1主键"><a href="#7-1主键" class="headerlink" title="7.1主键"></a>7.1主键</h2><ul>
+<li>定义：能够唯一区分出不同记录的字段</li>
+<li>主键选取的原则：不使用业务相关字段，不为<code>NULL</code>,通常为<code>id</code></li>
+<li><code>id</code>字段类型：<ul>
+<li>自增证书类型，<code>BIGINT NOT NULL AUTO_INCREMENT</code> BIGINT自增类型则可以最多约922亿亿条记录</li>
+<li>全局唯一GUID类型（全局唯一字符串）</li>
+</ul>
+</li>
+<li>联合主键：两个或更多的字段都设置为主键，只要不是所有主键列都重复</li>
+</ul>
+<h2 id="7-2外键"><a href="#7-2外键" class="headerlink" title="7.2外键"></a>7.2外键</h2><ul>
+<li>定义：可以与另一张表关联起来的字段</li>
+<li>作用：关系数据库通过外键可以实现一对多、多对多和一对一的关系</li>
+</ul>
+<h2 id="7-3索引"><a href="#7-3索引" class="headerlink" title="7.3索引"></a>7.3索引</h2><ul>
+<li>定义：对某一列或多个列的值进行预排序的数据结构</li>
+<li>作用：数据库系统不必扫描整个表，而是直接定位到符合条件的记录</li>
+<li>索引效率取决于索引列的值是否散列</li>
+<li>对数据进行操作时，需要同时更改索引</li>
+<li>唯一索引<ul>
+<li>作用：保证某一列的值具有唯一性，列如身份证号字段。<code>唯一约束也可以保证唯一性</code></li>
+</ul>
+</li>
+<li>数据库索引对于用户和应用程序来说都是透明的,创不创建只有查询速度的区别</li>
+</ul>
+<h1 id="8-MySQL相关知识"><a href="#8-MySQL相关知识" class="headerlink" title="8. MySQL相关知识"></a>8. MySQL相关知识</h1><h2 id="8-1-MySQL-Client和MySQL-Server的关系"><a href="#8-1-MySQL-Client和MySQL-Server的关系" class="headerlink" title="8.1 MySQL Client和MySQL Server的关系"></a>8.1 MySQL Client和MySQL Server的关系</h2><ul>
+<li>MySQL Client的可执行程序是mysql，MySQL Server的可执行程序是mysqld</li>
+<li>MySQL Client中输入的SQL语句通过TCP连接发送到MySQL Server。默认端口号是3306，即如果发送到本机MySQL Server，地址就是127.0.0.1:3306</li>
+<li>命令行程序mysql实际上是MySQL客户端，真正的MySQL服务器程序是mysqld，在后台运行</li>
+<li>InnoDB，是MySQL的数据库引擎之一，现为MySQL的默认存储引擎<h2 id="8-2-MySQL数据库的组成"><a href="#8-2-MySQL数据库的组成" class="headerlink" title="8.2 MySQL数据库的组成"></a>8.2 MySQL数据库的组成</h2>在一个运行MySQL的服务器上，实际上可以创建多个数据库（Database），其中，<code>information</code>_<code>schema</code>、<code>mysql</code>、<code>performance_schema</code>和<code>sys</code>是系统库，不要去改动它们。</li>
+</ul>
+<h1 id="9-事务"><a href="#9-事务" class="headerlink" title="9. 事务"></a>9. 事务</h1><h1 id="9-1-基础概念"><a href="#9-1-基础概念" class="headerlink" title="9.1 基础概念"></a>9.1 基础概念</h1><ul>
+<li>定义：把多条语句作为一个整体进行操作的功能</li>
+<li>作用：某些业务要求一系列的SQL语句必须全部执行，例如银行转账，一个账户减少100元，令一个账户必须多出100，如果如果第一条语句成功，第二条语句失败，就必须全部撤销</li>
+<li>数据库事务的四个特性ACID<ul>
+<li>A：Atomic，原子性，将所有SQL作为原子工作单元执行，要么全部执行，要么全部不执行；</li>
+<li>C：Consistent，一致性，事务完成后，所有数据的状态都是一致的，即A账户只要减去了100，B账户则必定加上了100；</li>
+<li>I：Isolation，隔离性，如果有多个事务并发执行，每个事务作出的修改必须与其他事务隔离；</li>
+<li>D：Duration，持久性，即事务完成后，对数据库数据的修改被持久化存储。</li>
+</ul>
+</li>
+<li>分类<ul>
+<li>隐式事务：数据库自动将单条SQL语句当做一个事务</li>
+<li>显示事务：使用BEGIN开启一个事务，使用COMMIT提交一个事务</li>
+</ul>
+</li>
+<li>回滚事务<br>有些时候，我们希望主动让事务失败，这时，可以用ROLLBACK回滚事务，整个事务会失败<h2 id="到是什么是事务失败？执行SQL语句报错并不算事务失败，SQL语句没有传到数据库并执行的时候才算失败。"><a href="#到是什么是事务失败？执行SQL语句报错并不算事务失败，SQL语句没有传到数据库并执行的时候才算失败。" class="headerlink" title="到是什么是事务失败？执行SQL语句报错并不算事务失败，SQL语句没有传到数据库并执行的时候才算失败。##"></a>到是什么是事务失败？执行SQL语句报错并不算事务失败，SQL语句没有传到数据库并执行的时候才算失败。##</h2>如果返回的信息符合自己预期的改动，则就可以输入COMMIT; 执行提交，如果不符合自己预期的改动或者其中一条sql出错啦，也可以输入COMMIT; 执行提交，但只会保存执行成功的那条sql语句的结果，出错的sql则不改变。如果发现出错在没有执行  COMMIT  的话，你也可以选择输入 ROLLBACK 回滚,那么这个事务就不提交啦。所以说执行完事务的内容后，必须选择ROLLBACK或COMMIT执行，才算事务结束。</li>
+</ul>
+<h2 id="9-2-隔离级别"><a href="#9-2-隔离级别" class="headerlink" title="9.2 隔离级别"></a>9.2 隔离级别</h2><h3 id="9-2-1-基本概念"><a href="#9-2-1-基本概念" class="headerlink" title="9.2.1 基本概念"></a>9.2.1 基本概念</h3><ul>
+<li>定义：数据库系统提供了隔离级别来让我们有针对性地选择事务的隔离级别，避免数据不一致的问题。</li>
+<li>作用：对于两个并发执行的事务，如果涉及到操作同一条记录的时候，可能会发生问题。因为并发操作会带来数据的不一致性，包括脏读、不可重复读、幻读等。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Isolation Level</th>
+<th>脏读（Dirty Read）</th>
+<th>不可重复读（Non Repeatable Read）</th>
+<th>幻读（Phantom Read）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Read Uncommitted</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Read Committed</td>
+<td>-</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Repeatable Read</td>
+<td></td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Serializable</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody></table>
+<h3 id="9-2-2-详细解释"><a href="#9-2-2-详细解释" class="headerlink" title="9.2.2 详细解释"></a>9.2.2 详细解释</h3><ul>
+<li><p>Read Uncommitted（可以读没有提交的）</p>
+<ul>
+<li><p>Read Uncommitted是隔离级别最低的一种事务级别。在这种隔离级别下，一个事务会读到另一个事务更新后但未提交的数据，如果另一个事务回滚，那么当前事务读到的数据就是脏数据，这就是脏读（Dirty Read）。</p>
+</li>
+<li><p>read uncommitted 隔离级别下，一个事务可以读到另一个事务更新数据后未提交的数据</p>
+</li>
+</ul>
+</li>
+<li><p>Read Committed（只能读另一个任务提交过的）</p>
+<ul>
+<li>一个事务可能会遇到不可重复读（Non Repeatable Read）的问题。</li>
+<li>不可重复读是指，在一个事务内，多次读同一数据，在这个事务还没有结束时，如果另一个事务恰好修改了这个数据，那么，在第一个事务中，两次读取的数据就可能不一致。</li>
+<li>一个事务在另一个事务更新数据后，不能读取另一个事务更新数据后 **未提交 **的数据(或者说想读取更新后的数据，必须在提交事务后；在提交事务前，只能读取到更新前的数据)</li>
+</ul>
+</li>
+<li><p>Repeatable Read （可重复读的）</p>
+<ul>
+<li><p>一个事务可能会遇到幻读（Phantom Read）的问题。</p>
+</li>
+<li><p>幻读是指，在一个事务中，第一次查询某条记录，发现没有，但是，当试图更新这条不存在的记录时，竟然能成功，并且，再次读取同一条记录，它就神奇地出现了。</p>
+</li>
+<li><p>幻读就是没有读到的记录，以为不存在，但其实是可以更新成功的，并且，更新成功后，再次读取，就出现了。</p>
+</li>
+</ul>
+</li>
+<li><p>Serializable（串行的）</p>
+<ul>
+<li><p>在Serializable隔离级别下，所有事务按照次序依次执行，因此，脏读、不可重复读、幻读都不会出现。</p>
+</li>
+<li><p>虽然Serializable隔离级别下的事务具有最高的安全性，但是，由于事务是串行执行，所以效率会大大下降，应用程序的性能会急剧降低。如果没有特别重要的情景，一般都不会使用Serializable隔离级别。</p>
+</li>
+</ul>
+</li>
+<li><p>默认隔离级别<br>如果没有指定隔离级别，数据库就会使用默认的隔离级别。在MySQL中，如果使用InnoDB，默认的隔离级别是Repeatable Read。</p>
+</li>
+</ul>
 
                 
             </div>
@@ -508,7 +748,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://WangwzZB.gitee.io/2021/04/18/uncategorized/hello-world/">http://WangwzZB.gitee.io/2021/04/18/uncategorized/hello-world/</a>
+                    <a href="http://WangwzZB.gitee.io/2021/04/21/sql/sql/sql-bi-ji-zheng-li/">http://WangwzZB.gitee.io/2021/04/21/sql/sql/sql-bi-ji-zheng-li/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -545,7 +785,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/SQL/">
+                                    <span class="chip bg-color">SQL</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -985,32 +1229,44 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/04/18/uncategorized/wo-de-di-yi-pian-bo-ke-wen/">
+                <a href="/2021/04/21/sql/sql/sql-ming-ling-ji-he/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="我的第一篇博客文">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="SQL命令集合">
                         
-                        <span class="card-title">我的第一篇博客文</span>
+                        <span class="card-title">SQL命令集合</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            SQL命令
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-18
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-21
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            WangwzZB
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/SQL/" class="post-category">
+                                    SQL
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/SQL/">
+                        <span class="chip bg-color">SQL</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1019,37 +1275,48 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/04/18/uncategorized/hello-world/">
+                <a href="/2021/04/21/shell/shell/shell-jiao-cheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Shell 脚本语言笔记">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">Shell 脚本语言笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            WSL切换为WSL2，WSL和windows主机文件互相访问
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-18
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-21
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            WangwzZB
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Shell/" class="post-category">
+                                    Shell
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Shell/">
+                        <span class="chip bg-color">Shell</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
