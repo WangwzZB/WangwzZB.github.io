@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="none">
+    <meta name="keywords" content="Newwork Technology Daily Ideas">
     <meta name="description" content="这是WangwzZB的博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>WangwzZB&#39;Blog</title>
+    <title>WangwzZB&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -45,7 +45,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">WangwzZB&#39;Blog</span>
+                    <span class="logo-span">WangwzZB&#39;s Blog</span>
                 </a>
             </div>
             
@@ -144,7 +144,7 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">WangwzZB&#39;Blog</div>
+        <div class="logo-name">WangwzZB&#39;s Blog</div>
         <div class="logo-desc">
             
             这是WangwzZB的博客
@@ -461,6 +461,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
@@ -469,24 +472,22 @@
                 <div align="center"><font size="70">**WSL相关操作**</font></div>
 
 <h1 id="1-WSL-和-Windows主机文件互相访问"><a href="#1-WSL-和-Windows主机文件互相访问" class="headerlink" title="1. WSL 和 Windows主机文件互相访问"></a>1. WSL 和 Windows主机文件互相访问</h1><h2 id="1-1-WSL访问Windows-文件"><a href="#1-1-WSL访问Windows-文件" class="headerlink" title="1.1 WSL访问Windows 文件"></a>1.1 WSL访问Windows 文件</h2><p>命令行进入 /mnt 目录即可访问</p>
-<p><img src="/2021/04/18/uncategorized/wsl/wsl-xiang-guan-cao-zuo/1.jpg"></p>
+<p><img src="/2021/04/18/uncategorized/WSL/WSL%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/1.jpg"></p>
 <h2 id="1-2-Windows访问-WSL文件"><a href="#1-2-Windows访问-WSL文件" class="headerlink" title="1.2 Windows访问 WSL文件"></a>1.2 Windows访问 WSL文件</h2><p>打开文件资源管理器，然后在目录窗口输入 <code>\\wsl$</code></p>
-<p><img src="/2021/04/18/uncategorized/wsl/wsl-xiang-guan-cao-zuo/2.jpg"></p>
+<p><img src="/2021/04/18/uncategorized/WSL/WSL%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/2.jpg"></p>
 <h1 id="2-更新到WSL2版本"><a href="#2-更新到WSL2版本" class="headerlink" title="2. 更新到WSL2版本"></a>2. 更新到WSL2版本</h1><h2 id="第一步：使用-winver-查看windows版本"><a href="#第一步：使用-winver-查看windows版本" class="headerlink" title="第一步：使用 winver 查看windows版本"></a>第一步：使用 winver 查看windows版本</h2><p>版本需在2004版本以上，可以通过控制面板\所有控制面板项\系统 检测更新</p>
-<h2 id="第二步：打开PowerShell-运行"><a href="#第二步：打开PowerShell-运行" class="headerlink" title="第二步：打开PowerShell 运行"></a>第二步：打开PowerShell 运行</h2><pre><code>PS C:\Users\wwz&gt; wsl -l -v  // 查看当前运行版本
+<h2 id="第二步：打开PowerShell-运行"><a href="#第二步：打开PowerShell-运行" class="headerlink" title="第二步：打开PowerShell 运行"></a>第二步：打开PowerShell 运行</h2><pre class="line-numbers language-none"><code class="language-none">PS C:\Users\wwz&gt; wsl -l -v  // 查看当前运行版本
   NAME            STATE           VERSION
 * Ubuntu-18.04    Running         1
 PS C:\Users\wwz&gt; wsl --set-version Ubuntu-18.04 2
 正在进行转换，这可能需要几分钟时间...
 有关与 WSL 2 的主要区别的信息，请访问 https://aka.ms/wsl2
-转换完成。
-</code></pre>
+转换完成。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="wsl错误：WslRegisterDistribution-failed-with-error-0x80370102"><a href="#wsl错误：WslRegisterDistribution-failed-with-error-0x80370102" class="headerlink" title="wsl错误：WslRegisterDistribution failed with error: 0x80370102"></a>wsl错误：WslRegisterDistribution failed with error: 0x80370102</h3><p>解决方法：设置 wsl –set-default-version 1 即可重新安装linux系统</p>
 <p>bcdedit编辑win10启动选项hypervisorlaunchtype的off改为auto</p>
-<h3 id="在打开wsl-版本的vscode-并使能编辑保存功能"><a href="#在打开wsl-版本的vscode-并使能编辑保存功能" class="headerlink" title="在打开wsl 版本的vscode 并使能编辑保存功能"></a>在打开wsl 版本的vscode 并使能编辑保存功能</h3><pre><code>root用户下，开启权限
+<h3 id="在打开wsl-版本的vscode-并使能编辑保存功能"><a href="#在打开wsl-版本的vscode-并使能编辑保存功能" class="headerlink" title="在打开wsl 版本的vscode 并使能编辑保存功能"></a>在打开wsl 版本的vscode 并使能编辑保存功能</h3><pre class="line-numbers language-none"><code class="language-none">root用户下，开启权限
 sudo chown -R wwz *
- 然后退出到普通用户：code . 打开VScode
-</code></pre>
+ 然后退出到普通用户：code . 打开VScode<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -513,7 +514,7 @@ sudo chown -R wwz *
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://WangwzZB.github.io/2021/04/18/uncategorized/wsl/wsl-xiang-guan-cao-zuo/">https://WangwzZB.github.io/2021/04/18/uncategorized/wsl/wsl-xiang-guan-cao-zuo/</a>
+                    <a href="http://WangwzZB.gitee.io/2021/04/18/uncategorized/WSL/WSL%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/">http://WangwzZB.gitee.io/2021/04/18/uncategorized/WSL/WSL%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -681,7 +682,7 @@ sudo chown -R wwz *
                         <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                        <img src="/medias/reward/wechat.jpg" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -725,7 +726,7 @@ sudo chown -R wwz *
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2021/04/18/uncategorized/wsl/wsl-xiang-guan-cao-zuo/">
+                <a href="/2021/04/18/uncategorized/WSL/WSL%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/">
                     <div class="card-image">
                         
                         
@@ -763,7 +764,7 @@ sudo chown -R wwz *
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/04/18/uncategorized/wo-de-di-yi-pian-bo-ke-wen/">
+                <a href="/2021/04/18/uncategorized/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87/">
                     <div class="card-image">
                         
                         
@@ -980,9 +981,9 @@ sudo chown -R wwz *
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2021</span>
+                <span id="year">2021</span>
             
-            <span id="year">2019</span>
+            <span id="year">2021</span>
             <a href="/about" target="_blank">WangwzZB</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
@@ -1010,13 +1011,13 @@ sudo chown -R wwz *
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <a href="https://github.com/WangwzZB" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
     </a>
 
 
 
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <a href="mailto:2642509545@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
         <i class="fas fa-envelope-open"></i>
     </a>
 
@@ -1026,7 +1027,7 @@ sudo chown -R wwz *
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2642509545" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2642509545" data-position="top" data-delay="50">
         <i class="fab fa-qq"></i>
     </a>
 
@@ -1035,10 +1036,6 @@ sudo chown -R wwz *
 
 
 
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
 
 </div>
     </div>
