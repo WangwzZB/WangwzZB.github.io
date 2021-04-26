@@ -529,7 +529,7 @@ header .go-back i {
 }
 
 /* 背景图效果. */
-/*
+
 .bg-cover {
     position: relative;
     display: flex;
@@ -541,7 +541,7 @@ header .go-back i {
     background-position: center center;
     background-size: cover;
     transform: translate3d(0px, 0px, 0px);
-}*/
+}
 
 .index-cover {
     height: 100vh;
@@ -551,10 +551,11 @@ header .go-back i {
     height: 40vh !important;
 }
 
+/*
 .bg-cover:after {
     -webkit-animation: rainbow 60s infinite;
     animation: rainbow 60s infinite;
-}
+}*/
 
 .bg-cover:before,
 .bg-cover:after {
@@ -594,8 +595,10 @@ header .go-back i {
     font-weight: 400;
 }
 
+
 @-webkit-keyframes rainbow {
 
+    
     0%,
     100% {
         background: rgba(156, 39, 176, 0.75);
@@ -638,10 +641,12 @@ header .go-back i {
         background: -moz-linear-gradient(135deg, rgba(233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
         background: -webkit-linear-gradient(135deg, rgba(2233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
     }
+    
 }
 
 @keyframes rainbow {
 
+    
     0%,
     100% {
         background: rgba(156, 39, 176, 0.75);
